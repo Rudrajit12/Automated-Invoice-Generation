@@ -1,6 +1,7 @@
 # 📄 Automated Invoice Generation and Email System
 
-**Project Category:** Workflow Automation, Business Operations
+### **Project Category:** Workflow Automation, Business Operations
+
 ---
 
 ## 🧭 Introduction
@@ -90,7 +91,7 @@ The invoice PDF matches the original company layout:
 - **Footer**: Payment instructions, PAN number, proprietor details, and signature.
 
 **Filename Format**:
-- Invoice_<BillNo>_<Month>.pdf
+- Invoice_BillNo_Month.pdf
 
 ---
 
