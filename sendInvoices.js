@@ -104,3 +104,21 @@ ${clientAddress}</pre></p>
                         .setName(`Invoice_${billNo}_${month}.pdf`);
   return blob;
 }
+
+
+function markNextInvoiceToSend() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Invoices');
+  const data = sheet.getDataRange().getValues();
+  const headers = data[0];
+  const SEND = headers.indexOf("Send");
+
+  for (let i = 1; i < data.length; i++) {
+    const sendCell = data[i][SEND];
+
+    // This condition catches the first row with an empty Send column
+    if (sendCell === "" || sendCell === false) {
+      sheet.getRange(i + 1, SEND + 1).setValue(true);
+      break; // Mark only one row per month
+    }
+  }
+}
