@@ -1,4 +1,5 @@
 # 📄 Automated Invoice Generation and Email System
+
 **Project Category:** Workflow Automation, Business Operations
 ---
 
@@ -128,19 +129,19 @@ The invoice PDF matches the original company layout:
 ## 📂 Project Structure
 
 📄 Google Sheet (Invoices)
-├── Bill No
-├── Client Name
-├── ...
-└── Send
+- ├── Bill No
+- ├── Client Name
+- ├── ...
+- └── Send
 
 📜 Apps Script Functions
-├── generateInvoicePDF()
-├── sendInvoices()
-└── markNextInvoiceToSend()
+- ├── generateInvoicePDF()
+- ├── sendInvoices()
+- └── markNextInvoiceToSend()
 
 ⏰ Triggers
-├── Monthly markNextInvoiceToSend()
-└── Monthly sendInvoices()
+- ├── Monthly markNextInvoiceToSend()
+- └── Monthly sendInvoices()
 
 
 ---
@@ -174,4 +175,4 @@ The invoice PDF matches the original company layout:
 **Author**: Rudrajit Bhattacharyya  
 **Email**: rudrajitb24@gmail.com  
 **LinkedIn**: [linkedin.com/in/rudrajitb24](https://www.linkedin.com/in/rudrajitb24)  
-
+**GitHub**: [github.com/Rudrajit12](https://github.com/Rudrajit12)
