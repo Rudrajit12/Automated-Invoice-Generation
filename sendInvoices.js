@@ -116,7 +116,7 @@ function markNextInvoiceToSend() {
     const sendCell = data[i][SEND];
 
     // This condition catches the first row with an empty Send column
-    if (sendCell === "" || sendCell === false) {
+    if (sendCell === "" ) {
       sheet.getRange(i + 1, SEND + 1).setValue(true);
       break; // Mark only one row per month
     }
